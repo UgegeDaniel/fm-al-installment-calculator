@@ -1,0 +1,1 @@
+export const AVAILABLE_TENURES_IN_MONTHS = [6, 9, 12, 15, 18, 21, 24];
