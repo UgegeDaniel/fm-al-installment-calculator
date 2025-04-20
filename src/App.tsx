@@ -67,7 +67,7 @@ const App: React.FC = () => {
           <form>
             <div className="grid w-full items-center gap-4 ">
               <div className="flex flex-col sm:flex-row gap-2">
-                <div className="flex flex-1 flex-col space-y-1.5 w-[50%]">
+                <div className="flex flex-1 flex-col space-y-1.5">
                   <Label htmlFor="location">Location</Label>
                   <Select
                     value={location}
@@ -86,7 +86,7 @@ const App: React.FC = () => {
                     </SelectContent>
                   </Select>
                 </div>
-                <div className="flex flex-1 flex-col space-y-1.5 w-[50%]">
+                <div className="flex flex-1 flex-col space-y-1.5">
                   <Label htmlFor="location">Available Products</Label>
                   <Select
                     value={product?.product_name || ""}
