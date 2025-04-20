@@ -10,6 +10,7 @@ import { Label } from "./components/ui/label";
 import { Input } from "./components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import Logo from "./assets/img/fm_logo.png"
+import { TypographyTable } from "./Table";
 
 const App: React.FC = () => {
   const [location, setLocation] = useState<Location>("");
@@ -109,6 +110,11 @@ const App: React.FC = () => {
                       ))}
                     </SelectContent>
                   </Select>
+                  {product && (
+                    <p className="mt-3 border-l-2 pl-3 pr-3 text-xl text-muted-foreground text-xs" style={{ color: "#37a477" }}>
+                      This product costs {formatMoney(product.product_price)}
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-2">
@@ -166,7 +172,7 @@ const App: React.FC = () => {
               You have to make at least 10% minimum down Payment
             </p>
           )}
-          {location && product && tenure && (downPayment! > product.product_price) && (
+          {location && product && tenure && (downPayment! >= product.product_price) && (
             <p className="mt-3 border-l-2 border-r-2 pl-3 pr-3 text-xl text-muted-foreground text-xs" style={{ color: "#37a477" }}>
               You cannot pay more than the asset cost
             </p>
@@ -188,6 +194,8 @@ const App: React.FC = () => {
               over the course of {tenure} months.
             </blockquote>
           )}
+
+          {/* <TypographyTable/> */}
         </CardContent>
       </Card>
     </div>
