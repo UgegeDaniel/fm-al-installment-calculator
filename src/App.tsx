@@ -10,7 +10,7 @@ import { Label } from "./components/ui/label";
 import { Input } from "./components/ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import Logo from "./assets/img/fm_logo.png"
-import { TypographyTable } from "./Table";
+// import { TypographyTable } from "./Table";
 
 const App: React.FC = () => {
   const [location, setLocation] = useState<Location>("");
