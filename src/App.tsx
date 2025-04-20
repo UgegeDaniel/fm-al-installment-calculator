@@ -51,7 +51,7 @@ const App: React.FC = () => {
     console.log(installmentPayment, { location, tenure, product })
   }, [location, tenure, product, downPayment])
   return (
-    <div className="mx-auto flex justify-center align-center mt-3">
+    <div className="mr-3 ml-3 flex justify-center align-center mt-3">
       <Card className="w-[550px] space-y-4 shadow-2xl">
         <CardHeader className="flex justify-between align-center">
           <div>
