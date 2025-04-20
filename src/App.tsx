@@ -66,7 +66,7 @@ const App: React.FC = () => {
         <CardContent>
           <form>
             <div className="grid w-full items-center gap-4 ">
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <div className="flex flex-1 flex-col space-y-1.5 w-[50%]">
                   <Label htmlFor="location">Location</Label>
                   <Select
@@ -111,7 +111,7 @@ const App: React.FC = () => {
                   </Select>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <div className="flex  flex-1 flex-col space-y-1.5">
                   <Label htmlFor="location">Tenure</Label>
                   <Select
